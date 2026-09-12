@@ -1,0 +1,35 @@
+{
+  "name": "next-safe-i18n",
+  "version": "0.0.1",
+  "description": "Safe and modern i18n for Next.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./*": "./dist/*.js"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorteokw/next-safe-i18n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorteokw/next-safe-i18n/issues"
+  },
+  "homepage": "https://github.com/victorteokw/next-safe-i18n#readme",
+  "author": "Victor Teo <yeannylam@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "peerDependencies": {
+    "next": "^16",
+    "react": "^19"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
