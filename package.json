@@ -1,6 +1,6 @@
 {
   "name": "next-safe-i18n",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Safe and modern i18n for Next.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
