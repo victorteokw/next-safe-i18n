@@ -5,7 +5,7 @@ import { match as matchLocale } from "@formatjs/intl-localematcher"
 import I18NConfig from "./config"
 
 export type I18n<Locale extends string, Dictionary> = {
-  createProxy(proxy: (request: NextRequest) => (NextResponse | undefined)): (request: NextRequest) => NextResponse
+  createProxy(proxy: (request: NextRequest) => (NextResponse | undefined) | undefined): (request: NextRequest) => NextResponse
   fetchLocale(params: Params<Locale>): Promise<Locale>
   fetchLocaleAndDictionary(params: Params<Locale>): Promise<{ locale: Locale, dictionary: Dictionary }>
 }
