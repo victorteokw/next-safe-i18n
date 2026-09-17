@@ -14,6 +14,10 @@ export type Params<Locale> = Promise<{
   lang: Locale
 }>
 
+export type Props<Locale> = {
+  params: Params<Locale>
+}
+
 export function createI18n<Locale extends string, Dictionary>(config: I18NConfig<Locale, Dictionary>): I18n<Locale, Dictionary> {
   return {
     createProxy(proxy: (request: NextRequest) => NextResponse | undefined = emptyProxy) {
